@@ -8,14 +8,21 @@ Usage :
 Namespaces :
 
 ```C#
-    using dnlib.DotNet;
-    using dnlib.DotNet.Emit;
+    using System;
+    using AntiRE.Runtime;
+    using System.Diagnostics;
 ```
 
 Prevent assembly being dumped from memory
 
 ```C#
   AntiDump.Parse(typeof(this.GetType()));
+```
+
+Get current process
+
+```C#
+     var CurrentProcess = Process.GetCurrentProcess();
 ```
 
 Prevent application start under sandbox tools
