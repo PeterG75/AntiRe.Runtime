@@ -100,6 +100,33 @@ Detect if dnspy installed on system
   AntiDnspy.Parse(CurrentProcess);
 ```
 
+Anti sniff request to server
+
+```C#
+  HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://google.com");
+  req.ContinueTimeout = 10000;
+  req.ReadWriteTimeout = 10000;
+  req.Timeout = 10000;
+  req.KeepAlive = true;
+  req.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Safari/537.36";
+  req.Accept = "*/*";
+  req.Method = "GET";
+  req.Headers.Add("Accept-Language", "en-US,en;q=0.9,fa;q=0.8");
+  req.Headers.Add("Accept-Encoding", "gzip, deflate");
+  req.AutomaticDecompression = DecompressionMethods.GZip;
+  req.ServerCertificateValidationCallback = AntiSniff.ValidationCallback;
+  req.ServicePoint.Expect100Continue = false;
+  using (HttpWebResponse response = req.GetResponse() as HttpWebResponse)
+  {
+  if (response.StatusCode != HttpStatusCode.OK)
+  {
+  Alert.Show("NETWORK CONNECTION ERROR, CHECK YOUR INTERNET CONNECTION OR CLOSE SNIFFER SOFTWARES");
+  Environment.Exit(0);
+  return;
+  }
+  }
+```
+
 Alert message settings
 
 ```C#
