@@ -3,6 +3,10 @@ About :
 -------
 A open source .net library for prevent from assembly being reverse engineered
 
+Tip :
+-------
+Obfuscate dll and merge it with main assembly for more security
+
 Features :
 -------
 [+] Anti debugger
