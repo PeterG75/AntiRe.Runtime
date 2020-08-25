@@ -84,3 +84,6 @@ Reverse engineering Channel : https://t.me/CodeStrikers
 
 Email : SychicBoy@CodeStrikers.org
 
+### Credits :
+robsonfelix for vm detcetor
+
