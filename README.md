@@ -104,7 +104,8 @@ Anti sniff request to server
 
 ```C#
   using System.Net;
-  
+  try
+  {
   HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://google.com");
   req.ContinueTimeout = 10000;
   req.ReadWriteTimeout = 10000;
@@ -120,12 +121,19 @@ Anti sniff request to server
   req.ServicePoint.Expect100Continue = false;
   using (HttpWebResponse response = req.GetResponse() as HttpWebResponse)
   {
+  //Optimal
   if (response.StatusCode != HttpStatusCode.OK)
   {
   Alert.Show("NETWORK CONNECTION ERROR, CHECK YOUR INTERNET CONNECTION OR CLOSE SNIFFER SOFTWARES");
   Environment.Exit(0);
   return;
   }
+  }
+  }
+  catch{
+  Alert.Show("NETWORK CONNECTION ERROR, CHECK YOUR INTERNET CONNECTION OR CLOSE SNIFFER SOFTWARES");
+  Environment.Exit(0);
+  return;
   }
 ```
 
