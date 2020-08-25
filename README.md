@@ -1,9 +1,9 @@
 # AntiRE.Runtime
-### About :
+About :
 -------
 A open source .net library for prevent from assembly being reverse engineered
 
-### Usage :
+Usage :
 -------
 Namespaces :
 
@@ -73,7 +73,7 @@ Detect if dnspy installed on system
   AntiDnspy.Parse(CurrentProcess);
 ```
 
-### Contacts :
+Contacts :
 -------
 Website : www.CodeStrikers.org
 
@@ -85,7 +85,7 @@ Reverse engineering Channel : https://t.me/CodeStrikers
 
 Email : SychicBoy@CodeStrikers.org
 
-### Credits :
+Credits :
 -------
 [robsonfelix](https://github.com/robsonfelix) for vm detcetor
 
