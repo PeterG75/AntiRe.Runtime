@@ -42,13 +42,14 @@ namespace AntiRe.Example
             AntiSniff.SelfDelete = SelfDelete;
             AntiSniff.ShowAlert = ShowAlert;
             AntiSniff.Parse(CurrentProcess);
-            //Prevent reverse engineering tools from started on system
+            //Prevents reverse engineering tools from running in the system
             AntiReverserTools.SelfDelete = SelfDelete;
             AntiReverserTools.ShowAlert = ShowAlert;
             AntiReverserTools.Aggressive = Aggressive;
             AntiReverserTools.IgnoreCase = true;
             AntiReverserTools.KeepAlive = true;
             AntiReverserTools.WhiteList.Add("notepad");
+            AntiReverserTools.BlackList.Add("dnspy");
             AntiReverserTools.Start(CurrentProcess);
             //Anti debugger
             AntiDebugger.SelfDelete = SelfDelete;
@@ -59,7 +60,6 @@ namespace AntiRe.Example
             //Detect if dnspy installed on system
             AntiDnspy.SelfDelete = SelfDelete;
             AntiDnspy.ShowAlert = ShowAlert;
-            AntiDnspy.SelfDelete = true;
             AntiDnspy.Parse(CurrentProcess);
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("\r\n [#] Application started successfully\r\n [#] Press any key to exit...");
