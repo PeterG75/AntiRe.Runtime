@@ -80,6 +80,15 @@ Detect if dnspy installed on system
   AntiDnspy.Parse(CurrentProcess);
 ```
 
+Alert message settings
+
+```C#
+  Alert.NotepadStyle = true; //True == Show message in notepad & False == MessageBox
+  Alert.AutoClose = false; //Auto close message box after preferred time
+  Alert.AutoCloseTime = 2; //Time (seconds) to close the messagebox
+  Alert.NotepadPath = "readme.txt"; //Notepad file path
+```
+
 ![](https://user-images.githubusercontent.com/53654076/91207148-8df60580-e71d-11ea-8333-c554b37b628d.png)
 
 Contacts :
