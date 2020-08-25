@@ -4,7 +4,7 @@
 A open source .net library for prevent from assembly being reverse engineered
 
 ### Usage :
----------
+-------
 Namespaces :
 
 ```C#
