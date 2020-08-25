@@ -115,11 +115,11 @@ Contacts :
 -------
 Website : www.CodeStrikers.org
 
-Telegram : @SychicBoy
+Telegram : [@SychicBoy](https://t.me/SychicBoy)
 
-Softwares Channel : https://t.me/CSSOFT
+Softwares Channel : [@CSSOFT](https://t.me/CSSOFT)
 
-Reverse engineering Channel : https://t.me/CodeStrikers
+Reverse engineering Channel : [@CodeStrikers](https://t.me/CodeStrikers)
 
 Email : SychicBoy@CodeStrikers.org
 
