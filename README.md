@@ -8,9 +8,9 @@ Usage :
 Namespaces :
 
 ```C#
-    using System;
-    using AntiRE.Runtime;
-    using System.Diagnostics;
+  using System;
+  using AntiRE.Runtime;
+  using System.Diagnostics;
 ```
 
 Prevent assembly being dumped from memory
@@ -22,7 +22,7 @@ Prevent assembly being dumped from memory
 Get current process
 
 ```C#
-     var CurrentProcess = Process.GetCurrentProcess();
+  var CurrentProcess = Process.GetCurrentProcess();
 ```
 
 Prevent application start under sandbox tools
