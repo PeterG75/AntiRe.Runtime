@@ -114,7 +114,7 @@ Anti sniff request to server
   req.Headers.Add("Accept-Language", "en-US,en;q=0.9,fa;q=0.8");
   req.Headers.Add("Accept-Encoding", "gzip, deflate");
   req.AutomaticDecompression = DecompressionMethods.GZip;
-  req.ServerCertificateValidationCallback = AntiSniff.ValidationCallback;
+  req.ServerCertificateValidationCallback = AntiSniff.ValidationCallback; //Server Certificate Validation
   req.ServicePoint.Expect100Continue = false;
   using (HttpWebResponse response = req.GetResponse() as HttpWebResponse)
   {
