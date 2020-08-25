@@ -3,6 +3,22 @@ About :
 -------
 A open source .net library for prevent from assembly being reverse engineered
 
+Features :
+-------
+[+] Anti debugger
+
+[+] Anti sandbox
+
+[+] Anti virtual machine
+
+[+] Anti reverse engineering tools
+
+[+] Anti memory dumping
+
+[+] Anti dnspy
+
+[+] Anti sniff (prevent network being monitored)
+
 Usage :
 -------
 Namespaces :
