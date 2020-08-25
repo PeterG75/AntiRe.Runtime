@@ -103,6 +103,8 @@ Detect if dnspy installed on system
 Anti sniff request to server
 
 ```C#
+  using System.Net;
+  
   HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://google.com");
   req.ContinueTimeout = 10000;
   req.ReadWriteTimeout = 10000;
