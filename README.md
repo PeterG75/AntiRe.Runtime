@@ -80,6 +80,8 @@ Detect if dnspy installed on system
   AntiDnspy.Parse(CurrentProcess);
 ```
 
+![](https://user-images.githubusercontent.com/53654076/91207148-8df60580-e71d-11ea-8333-c554b37b628d.png)
+
 Contacts :
 -------
 Website : www.CodeStrikers.org
